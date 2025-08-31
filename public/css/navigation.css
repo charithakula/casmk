@@ -26,7 +26,7 @@
     height: 90px;
 }
 
-.logo {
+/* .logo {
     font-weight: 900;
     font-size: 1.75rem;
     background: var(--gradient-primary);
@@ -47,7 +47,34 @@
     background: var(--gradient-primary);
     border-radius: 2px;
     opacity: 0.7;
+} */
+
+/* Logo container */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; /* spacing between image and text */
+    text-decoration: none;
 }
+
+/* Logo image */
+.logo img {
+    height: 39px;  /* adjust as needed */
+    width: auto;   /* keeps aspect ratio */
+    display: block;
+}
+
+/* Logo text with gradient */
+.logo-text {
+    font-weight: 900;
+    font-size: 1.75rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1; /* keeps text vertically aligned with logo */
+}
+
 
 .nav-menu {
     display: flex;
@@ -338,7 +365,7 @@
 }
 
 .payment-btn {
-    background: var(--gradient-accent);
+    background: var(--gradient-primary);
     color: white;
 }
 

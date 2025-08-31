@@ -2,8 +2,12 @@
 <nav class="nav" id="nav">
     <div class="section-container">
         <div class="nav-container">
-            <a href="{{ route('home') }}" class="logo">CA SMK</a>
-            
+            {{-- <a href="{{ route('home') }}" class="logo">CA SMK</a> --}}
+            <a href="{{ route('home') }}" class="logo flex items-center gap-3">
+                <img src="{{ asset('images/sai.svg') }}" alt="CA SMK Logo" class="h-12 w-auto">
+                {{-- <span class="logo-text">CA SMK</span> --}}
+            </a>
+
             <!-- DESKTOP MENU -->
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -226,9 +230,9 @@
                     </div>
                 </li>
 
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="{{ route('contact') }}" class="nav-link">Contact</a>
-                </li>
+                </li> --}}
             </ul>
 
             <!-- CALL TO ACTION BUTTONS -->

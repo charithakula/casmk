@@ -1,8 +1,10 @@
 /* MAIN APPLICATION STYLES - public/css/app.css */
 
 :root {
-    --primary: #6366f1;
-    --primary-dark: #4f46e5;
+    /* --primary: #6366f1;
+    --primary-dark: #4f46e5; */
+    --primary: #145886;       /* Orange */
+    --primary-dark: #145886;  /* Deep Blue */
     --secondary: #ec4899;
     --accent: #f59e0b;
     --success: #10b981;
@@ -17,7 +19,7 @@
     --light-secondary: #f1f5f9;
     --light-accent: #e2e8f0;
     
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-primary: linear-gradient(135deg, #145886 0%, #55B848 100%);
     --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     --gradient-dark: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 100%);

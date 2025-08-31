@@ -1,27 +1,5 @@
 <?php
 
-// use Illuminate\Support\Facades\Route;
-// use Livewire\Volt\Volt;
-
-// Route::get('/', function () {
-//     return view('welcome');
-// })->name('home');
-
-// Route::view('dashboard', 'dashboard')
-//     ->middleware(['auth', 'verified'])
-//     ->name('dashboard');
-
-// Route::middleware(['auth'])->group(function () {
-//     Route::redirect('settings', 'settings/profile');
-
-//     Volt::route('settings/profile', 'settings.profile')->name('settings.profile');
-//     Volt::route('settings/password', 'settings.password')->name('settings.password');
-//     Volt::route('settings/appearance', 'settings.appearance')->name('settings.appearance');
-// });
-
-
-// ROUTES FILE - routes/web.php
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ServiceController;
@@ -32,12 +10,29 @@ use App\Http\Controllers\IndustryController;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\NewsletterController;
+use Livewire\Volt\Volt;
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 */
+
+Route::get('/', function () {
+    return view('welcome');
+})->name('home');
+
+Route::view('dashboard', 'dashboard')
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
+
+Route::middleware(['auth'])->group(function () {
+    Route::redirect('settings', 'settings/profile');
+
+    Volt::route('settings/profile', 'settings.profile')->name('settings.profile');
+    Volt::route('settings/password', 'settings.password')->name('settings.password');
+    Volt::route('settings/appearance', 'settings.appearance')->name('settings.appearance');
+});
 
 // Home Page
 Route::get('/', [HomeController::class, 'index'])->name('home');
